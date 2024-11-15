@@ -1,0 +1,23 @@
+This code set is open-sourced for the reproduction of our paper entitled "UMTrajNet: A Spatiotemporal Uncertainty Modelling Structure of Human Movement Trajectories
+under Complex Indoor Areas", and we will provide a step-to-step instruction about how to use our code for experiments.
+
+1. Download the dataset with trajectory data from T01_01 to T37_03.
+
+2. Download Pytorch, and install the tensorflow environment using the requirements provided in document py36.yaml.
+
+3. Open Pytorch, run the code EXP01_DataSummary.py to get the dataset information described in Table.1.
+
+4. Run the code EXP02_Trajectory_GTandRT to get the Examples of the Referenced Trajectory (RT) and Ground-truth Trajectory (GT) in Figure. 5.
+
+5. Run the code train_tf.py for designed deep-learning model training and saving. 
+
+6. Run the code EXP03_STraj_Result.py to display the average MAE of respective models in Table 2.
+
+7. Run the code EXP04_UncertaintyArea.py to get the uncertianty regions of selected trajectory in Figure 6.
+
+8. Run the code EXP05_singleTrajError.py to get the uncertainty region using different models in Figure 7.
+
+8. Run the code EXP_sensitive.py to calculate the uncertianty parameters-related prediction results, and the Figure 8 can be generated based on the result.csv.
+
+
+
